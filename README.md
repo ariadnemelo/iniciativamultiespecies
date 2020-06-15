@@ -1,6 +1,6 @@
 # Iniciativa Multiespécies
 
-Repositório do site Iniciativa Multiespécies, que irá abrigar o projeto R[oteiros Animais](https://labdeemergencia.silo.org.br/2ed/pt/roteiros-animais/), da [Segunda Edição do Laboratório de Emergência Covid-19](https://labdeemergencia.silo.org.br/2ed/pt/).
+Repositório do site Iniciativa Multiespécies, que irá abrigar o projeto [Roteiros Animais](https://labdeemergencia.silo.org.br/2ed/pt/roteiros-animais/), da [Segunda Edição do Laboratório de Emergência Covid-19](https://labdeemergencia.silo.org.br/2ed/pt/).
 
 ## Roteiros Animais: sobre o projeto
 
