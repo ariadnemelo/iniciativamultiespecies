@@ -9,3 +9,7 @@ O projeto aplica os conceitos de ciência cidadã, saúde única e saúde silves
 ## Tecnologias
 
 O site será desenvolvido na plataforma [Wordpress](https://wordpress.org/), utilizando o tema [LMS - Responsive Learning Management System](https://themeforest.net/item/lms-learning-management-system-education-lms-wordpress-theme/7867581).
+
+## Prazo
+
+O prazo para publicação do site para teste é no dia 19/06/2020.
