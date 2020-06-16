@@ -1,0 +1,125 @@
+<?php
+global $dttheme_social_bookmarks; // Used in Blog single & page tab in BPanel
+$dttheme_social_bookmarks = array(array(
+							"id"=>		"googleplus",
+							"label"=>	esc_html__("Show Google+ One", 'lms'),
+							"options"=>	array(
+								"standard"=>esc_html__("Standard", 'lms'),
+								"small"=>esc_html__("Small", 'lms'),
+								"medium"=>esc_html__("Medium", 'lms'),
+								"tall"=>esc_html__("Tall", 'lms')),
+							"lang"=>array(
+								"ar" => esc_html__( "Arabic", 'lms' ),
+								"bn" => esc_html__( "Bengali", 'lms' ),
+								"bg" => esc_html__( "Bulgarian", 'lms' ),
+								"ca" => esc_html__( "Catalan", 'lms' ),
+								"zh" => esc_html__( "Chinese", 'lms' ),
+								"zh_CN" => esc_html__( "Chinese (China)", 'lms' ),
+								"zh_HK" => esc_html__( "Chinese (Hong Kong)", 'lms' ),
+								"zh_TW" => esc_html__( "Chinese (Taiwan)", 'lms' ),
+								"hr" => esc_html__( "Croation", 'lms' ),
+								"cs" => esc_html__( "Czech", 'lms' ),
+								"da" => esc_html__( "Danish", 'lms' ),
+								"nl" => esc_html__( "Dutch", 'lms' ),
+								"en_IN" => esc_html__( "English (India)", 'lms' ),
+								"en_IE" => esc_html__( "English (Ireland)", 'lms' ),
+								"en_SG" => esc_html__( "English (Singapore)", 'lms' ),
+								"en_ZA" => esc_html__( "English (South Africa)", 'lms' ),
+								"en_GB" => esc_html__( "English (United Kingdom)", 'lms' ),
+								"fil" => esc_html__( "Filipino", 'lms' ),
+								"fi" => esc_html__( "Finnish", 'lms' ),
+								"fr" => esc_html__( "French", 'lms' ),
+								"de" => esc_html__( "German", 'lms' ),
+								"de_CH" => esc_html__( "German (Switzerland)", 'lms' ),
+								"el" => esc_html__( "Greek", 'lms' ),
+								"gu" => esc_html__( "Gujarati", 'lms' ),
+								"iw" => esc_html__( "Hebrew", 'lms' ),
+								"hi" => esc_html__( "Hindi", 'lms' ),
+								"hu" => esc_html__( "Hungarian", 'lms' ),
+								"in" => esc_html__( "Indonesian", 'lms' ),
+								"it" => esc_html__( "Italian", 'lms' ),
+								"ja" => esc_html__( "Japanese", 'lms' ),
+								"kn" => esc_html__( "Kannada", 'lms' ),
+								"ko" => esc_html__( "Korean", 'lms' ),
+								"lv" => esc_html__( "Latvian", 'lms' ),
+								"ln" => esc_html__( "Lingala", 'lms' ),
+								"lt" => esc_html__( "Lithuanian", 'lms' ),
+								"ms" => esc_html__( "Malay", 'lms' ),
+								"ml" => esc_html__( "Malayalam", 'lms' ),
+								"mr" => esc_html__( "Marathi", 'lms' ),
+								"no" => esc_html__( "Norwegian", 'lms' ),
+								"or" => esc_html__( "Oriya", 'lms' ),
+								"fa" => esc_html__( "Persian", 'lms' ),
+								"pl" => esc_html__( "Polish", 'lms' ),
+								"pt_BR" => esc_html__( "Portugese (Brazil)", 'lms' ),
+								"pt_PT" => esc_html__( "Portugese (Portugal)", 'lms' ),
+								"ro" => esc_html__( "Romanian", 'lms' ),
+								"ru" => esc_html__( "Russian", 'lms' ),
+								"sr" => esc_html__( "Serbian", 'lms' ),
+								"sk" => esc_html__( "Slovak", 'lms' ),
+								"sl" => esc_html__( "Slovenian", 'lms' ),
+								"es" => esc_html__( "Spanish", 'lms' ),
+								"sv" => esc_html__( "Swedish", 'lms' ),
+								"gsw" => esc_html__( "Swiss German", 'lms' ),
+								"ta" => esc_html__( "Tamil", 'lms' ),
+								"te" => esc_html__( "Telugu", 'lms' ),
+								"th" => esc_html__( "Thai", 'lms' ),
+								"tr" => esc_html__( "Turkish", 'lms' ),
+								"uk" => esc_html__( "Ukranian", 'lms' ),
+								"vi" => esc_html__( "Vietnamese", 'lms' ))
+						),array(
+							"id"=>		"fb_like",
+							"label"=>	esc_html__("Show Facebook like", 'lms'),
+							"options"=>	array(
+								"standard"=>esc_html__("Standard", 'lms'),
+								"box_count" =>esc_html__("Box Count", 'lms'),
+								"button_count" =>esc_html__("Button Count", 'lms')),
+							"color-scheme"=>array("dark","light")
+						),array(
+							"id"=>		"digg",
+							"label"=>	esc_html__("Show Digg", 'lms'),
+							"options"=>	array(
+									"DiggWide"=>esc_html__("Wide", 'lms'),
+									"DiggMedium"=>esc_html__("Medium", 'lms'),
+									"DiggCompact"=>esc_html__("Compact", 'lms'),
+									"DiggIcon"=>esc_html__("Icon", 'lms'))
+						),array(
+							"id"=>		"stumbleupon",
+							"label"=>	esc_html__("Show Stumbleupon", 'lms'),
+							"options"=>	array(
+										"1"=>esc_html__("style1", 'lms'),
+										"2"=>esc_html__("style2", 'lms'),
+										"3"=>esc_html__("style3", 'lms'),
+										"4"=>esc_html__("style4", 'lms'),
+										"5"=>esc_html__("style5", 'lms'),
+										"6"=>esc_html__("style6", 'lms'))
+						),array("id"=>		"linkedin",
+							"label"=>	esc_html__("Show LinkedIn", 'lms'),
+							"options"=>	array("1"=>"style1","2"=>"style2","3"=>"style3")
+						),array(
+							"id"=>		"pintrest",
+							"label"=>	esc_html__("Show Pintrest", 'lms'),
+							"options"=>	array("none" =>esc_html__("None", 'lms'),"vertical" =>esc_html__("Vertical", 'lms'),"horizontal"=>esc_html__("Horizontal", 'lms'))
+						),array(
+							"id"=>		"delicious",
+							"label"=>	esc_html__("Show Delicious", 'lms'),
+							"text"=>""
+						),array(
+							"id"=>		"twitter",
+							"label"=>	esc_html__("Show Twitter", 'lms'),
+							"options"=>	array(
+								"none" => esc_html__("None", 'lms'),
+								"vertical" => esc_html__("Vertical", 'lms')
+								,"horizontal"=>esc_html__("Horizontal", 'lms')),
+							"username"=>'',
+							"lang"=>	array(
+							    ""	 => esc_html__("Select", 'lms'),
+								"fr" => esc_html__( "French", 'lms' ),
+								"de" => esc_html__( "German", 'lms' ),
+								"it" => esc_html__( "Italian", 'lms' ),
+								"ja" => esc_html__( "Japanese", 'lms' ),
+								"ko" => esc_html__( "Korean", 'lms' ),
+								"ru" => esc_html__( "Russian", 'lms' ),
+								"es" => esc_html__( "Spanish", 'lms' ),
+								"tr" => esc_html__( "Turkish", 'lms' ))
+						));?>
