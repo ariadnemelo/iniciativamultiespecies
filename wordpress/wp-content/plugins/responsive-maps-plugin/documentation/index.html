@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Title -->
+	<title>Responsive Styled Google Maps WordPress Plugin - Documentation</title>
+	
+	<!-- Meta -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Responsive Styled Google Maps WordPress Plugin - Documentation">
+	<meta name="author" content="hevada">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/materialize.css" />
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<!-- Scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body class="ready">
+
+	<!-- Page -->
+	<div class="page" id="home-section">
+
+		<!-- Preloader -->
+		<div class="preloader" style="display: none;">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="preloader-wrapper spinner big active" style="display: none;">
+						<div class="spinner-layer spinner-blue">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="spinner-layer spinner-red">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+						<div class="spinner-layer spinner-green">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header>
+
+			<!-- SideNav -->
+			<ul class="side-nav fixed" id="nav-mobile" style="transform: translateX(0%);">
+				<li class="curent">
+					<div class="userView">
+						<div class="background"></div>
+						<img class="avatar" src="img/profile.png" alt="">
+						<br>
+					</div>
+				</li>
+				<li class="active"><a href="#home-section" class="waves-effect waves-light active"> <i
+						class="material-icons">home</i>Home
+				</a></li>
+				<li class=""><a href="#about-section" class="waves-effect waves-light"> <i
+						class="material-icons">info</i>About
+				</a></li>
+				<li><a href="#features-section" class="waves-effect waves-light"> <i
+						class="material-icons">assignment</i>Features
+				</a></li>
+				<li class=""><a href="#structure-section" class="waves-effect waves-light"> <i
+						class="material-icons">folder</i>Structure
+				</a></li>
+				<li class=""><a href="#installation-section" class=" waves-effect waves-light"> <i
+						class="material-icons">settings_application</i>Installation
+				</a></li>
+				<li class=""><a href="#upgrade-section" class="waves-effect waves-light"> <i
+						class="material-icons">view_carousel</i>Upgrade
+				</a></li>
+				<li class=""><a href="#usage-section" class="waves-effect waves-light"> <i
+						class="material-icons">library_books</i>Usage
+				</a></li>
+				<li class=""><a href="#faq-section" class="waves-effect waves-light"> <i
+						class="material-icons">help</i>FAQ
+				</a></li>
+				<li class=""><a href="#changelog-section" class="waves-effect waves-light"> <i
+						class="material-icons">track_changes</i>Changelog
+				</a></li>
+			</ul>
+
+			<!-- Top menu -->
+			<nav class="top-menu">
+				<div class="nav-wrapper">
+					<ul>
+						<li><a href="#" data-activates="nav-mobile" class="menu-btn"><i
+								class="material-icons">menu</i></a></li>
+					</ul>
+				</div>
+			</nav>
+
+		</header>
+
+		<!-- Container -->
+		<main>
+		<div class="container scrollspy" id="home-section">
+
+			<!-- Section Home -->
+
+			<div class="section-started" id="home-section">
+
+				<div class="row">
+					<div class="col s12 m12 l6">
+						<ul class="collection collection-info z-depth-1">
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s6 m5 l5 grey-text darken-1">
+										<i class="material-icons">work</i> Item:
+									</div>
+									<div class="col s6 m7 l7 grey-text text-darken-4 right-align">Responsive Styled Google Maps</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s6 m5 l5 grey-text darken-1">
+										<i class="material-icons">timeline</i> Version:
+									</div>
+									<div class="col s6 m7 l7 grey-text text-darken-4 right-align">4.6 (WordPress Plugin)</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s6 m5 l5 grey-text darken-1">
+										<i class="material-icons">today</i> Last modified:
+									</div>
+									<div class="col s6 m7 l7 grey-text text-darken-4 right-align">04 January 2019</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col s12 m12 l6">
+						<ul class="collection collection-info z-depth-1">
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s8 m5 l5 grey-text darken-1">
+										<i class="material-icons">assignment_ind</i> Author:
+									</div>
+									<div class="col s4 m7 l7 grey-text text-darken-4 right-align">hevada</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s8 m5 l5 grey-text darken-1">
+										<i class="material-icons">portrait</i> Author profile:
+									</div>
+									<div class="col s4 m7 l7 grey-text text-darken-4 right-align">
+										<a href="https://codecanyon.net/user/hevada">https://codecanyon.net/user/hevada</a>
+									</div>
+								</div>
+							</li>
+							<li class="collection-item">
+								<div class="row">
+									<div class="col s8 m5 l5 grey-text darken-1">
+										<i class="material-icons">forum</i> Support:
+									</div>
+									<div class="col s4 m7 l7 grey-text text-darken-4 right-align">
+										<a href="http://support.hevada.com">https://support.hevada.com</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+
+			</div>
+
+			<!-- Section About -->
+			<div class="section scrollspy" id="about-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Responsive Styled Google Maps - WordPress Plugin</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<p>This item is a Google map generator, easy and simple, for WordPress. The generated 
+								maps are responsive and styled and are generated using an intuitive shortcode. The 
+								plugin allows multiple markers on the same map and multiple maps in a page. A shortcode 
+								builder is  included, together with 50 colorful map styles.</p>
+								<p>It's suitable for any type of WordPress website on which you want to put a map: 
+								photography, eCommerce, personal blog, company website, portfolio, venues, concerts, 
+								architecture, real estate, 
+								library, etc
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Features -->
+			<div class="section scrollspy" id="features-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Features</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<blockquote>This plugin is developed for WordPress single-site installation.
+									It's not recommended for WordPress multi-site installations.</blockquote>
+								<p>These are the main features of this plugin:</p>
+								<ol>
+									<li>Shows address OR latitude/longitude</li>
+									<li>100% responsive</li>
+									<li>Mobile-friendly</li>
+									<li>Retina support</li>
+									<li>Works in sidebars, posts, pages and custom post types</li>
+									<li>Works with Visual Composer</li>
+									<li>Multiple markers</li>
+									<li>Multiple maps in a page/post</li>
+									<li>Real time map preview</li>
+									<li>HTML popups</li>
+									<li>Search box</li>
+									<li>Clustering option</li>
+									<li>Show/Hide the points of interest</li>
+									<li>Custom link in the popups</li>
+									<li>50 included colorful styles or a hue color</li>
+									<li>10 included icons</li>
+									<li>Custom icons</li>
+									<li>Location button</li>
+									<li>Controls on/off</li>
+									<li>Directions link</li>
+									<li>Street views</li>
+									<li>W3C valid, does not break your W3C validation</li>
+									<li>Minified resources (JS, CSS) for faster loading</li>
+									<li>Translation ready.</li>
+									<li>Detailed documentation.</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Structure -->
+			<div class="section scrollspy" id="structure-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Structure</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<p>
+									<br>This is the folder structure in the plugin main folder:
+								</p>
+								<a href="img/structure.png" title="structure"> <img src="img/structure.png"
+									alt="structure" />
+								</a>
+								<p>
+									<br>The main folder is: responsive-maps-plugin; and these are the sub-folders and files:
+								</p>
+								<ol>
+									<li><strong>documentation</strong> (plugin's documentation)</li>
+									<li><strong>includes</strong> (contains the CSS styles, the scripts and the images)</li>
+									<li><strong>languages</strong> (contains plugin translations files)</li>
+									<li><strong>class-envato-market.php</strong> (file used for automated updates)</li>
+									<li><strong>responsive-styled-google-maps-admin.php</strong> (plugin's admin form file)</li>
+									<li><strong>responsive-styled-google-maps.php</strong> (plugin's main file)</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Installation -->
+			<div class="section scrollspy" id="installation-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Installation</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<p>
+									<br>These are the steps to install the plugin:
+								</p>
+								<ol>
+									<li>Download on your computer the ZIP file from codecanyon.net</li>
+									<li>Open your WP admin dashboard and go to Plugins -&gt; Add New -&gt; Upload the ZIP file from step 1.</li>
+									<li>Activate the plugin.</li>
+									<li>Open any page, post, custom post type or text widget and create your map with <strong>[res_map address=&quot;your_address&quot;]</strong> shortcode.</li>
+									<li>To customize the map, add parameters like this: [res_map parameter1=&quot;value&quot; parameter2=&quot;value&quot;] or go to your wordpress admin panel, navigate to <strong> Settings -&gt; Responsive Styled Maps Helper </strong> menu item. It will open the plugin&#39;s panel like in the image below, where you can customize various settings.</li>
+									<li>Here is a video tutorial showing how to install a premium plugin, with the steps 
+									described above: <a href="https://youtu.be/JBxRuJVnMOY" target="_blank">https://youtu.be/JBxRuJVnMOY</a></li>
+									<li><div class="alert">
+											<strong>For maps created after June 22, 2016, Google requires the mandatory use of an API key, you can get a key from <a href="https://cloud.google.com/maps-platform/?#get-started" target="_blank"><strong>HERE</strong></a>. Please follow the steps presented at that link to get the API key and please make sure you check all these 3 products checkboxes below during the process:</strong></div>
+											<img src="img/getting_api_key.png" alt="key" />
+									</li>
+								</ol>
+
+								<p>
+									After you successfuly install the plugin, navigate to Dashboard->Settings->Responsive Styled Google Maps - Helper and you will see this admin window, where you can generate the map shortcode: <br><br>
+									<img src="img/image_13.png" alt="map" width="100%"/>
+								</p>
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Upgrade -->
+			<div class="section scrollspy" id="upgrade-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Upgrade</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<p>These are the steps to upgrade the plugin from an old version to a newer version:</p>
+								<p><strong>Manual upgrade:</strong></p>
+								<ol>
+									<li>Before upgrading the plugin, <strong>do not delete the already created map shortcodes</strong> from pages or posts, they will not be affected. Also, in case you have some custom modifications made to the plugin, plese make sure that you have a backup copy of the plugin folder.</li>
+									<li>Navigate to your Dashboard</li>
+									<li>Deactivate the Responsive Styled Google Maps plugin.</li>
+									<li>Delete the plugin by clicking the Delete button.</li>
+									<li>A confirmation message displays asking you whether you&rsquo;re sure you want to delete this plugin.</li>
+									<li>Click the &quot;<strong>Yes, Delete These Files</strong>&quot; button.</li>
+									<li>Download again the latest version of the plugin from codecanyon and install it from scratch.</li>
+								</ol>
+								
+								<p><strong>Automatic upgrade:</strong></p>
+								<ol>
+									<li>Download and install the Envato Market WordPress Plugin from: 
+										<a href="https://envato.com/market-plugin/" target="_blank">
+											https://envato.com/market-plugin/
+										</a>.</li>
+									<li>Navigate then to your WordPress admin dashboard, click the Envato Market menu 
+										item, then click Plugins tab and click the Update link near the 
+										Responsive Styled Google Maps WordPress Plugin.
+									</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Usage -->
+			<div class="section scrollspy" id="usage-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Usage</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<p>After you download and activate the plugin, just open in edit mode any post, custom 
+								post type, page or widget and write this simple shortcode to generate a map in that 
+								place:</p>
+								
+								<p>[res_map address="street, city, country"]</p>
+								
+								<p>Since WordPress 5.0, you will have to insert the map shortcode in a "classic"
+								block type.</p>
+								
+								<p>To customize the map, go to your wordpress admin panel, navigate to <strong> 
+								Settings -> Responsive Styled Maps Helper </strong> menu item. It will open the 
+								plugin's panel, where you can customize various settings.</p>
+								
+								<p><strong>THE BUTTONS IN ADMIN HELPER:</strong></p>
+								<p>LOAD A SHORTCODE - just copy-paste a map shortcode previously generated, click this 
+								button, then paste your shortcode and you will be able to edit that shortcode and its settings</p>
+								<p>RELOAD THE MAP - this button just reloads the map from the right part of the screen 
+								(the map preview)</p>
+								<p>SAVE SETTINGS - this button saves all the settings at that moment into the database</p>
+								<p>	RESET SETTINGS - this button just resets all the settings and the map preview to 
+								the default ones (those given as basic example)</p>
+								<br>
+
+								<h3>1. Map with two markers (two addresses separated with the | pipeline symbol)</h3>
+								<br>
+								<p class="background">
+									[res_map address="<strong><span class='code'>L'Île-Perrot, QC, Canada | 
+									Notre-Dame-de-l'Île-Perrot, QC, Canada</span></strong>" 
+									description="L'Île-Perrot, QC, Canada | Notre-Dame-de-l'Île-Perrot, QC, Canada" 
+									directionstext="(directions to our address)" icon="green | green" style="2" 
+									scalecontrol="no" typecontrol="no" streetcontrol="no" zoom="11" zoomcontrol="no" 
+									draggable="yes" scrollwheel="no" searchbox="no" clustering="no" logging="no"0
+									 poi="yes" width="880px" height="500px" maptype="roadmap" popup="no" center="" 
+									 refresh="no" key="your_api_key"]
+								</p>
+								<p><img src="img/image_1.png" alt="map" /></p>
+								<br>
+
+								<h3>2. Map with address given with latitude/longitude and zoom=8</h3>
+								<br>
+								<p class="background">
+									[res_map address="<strong><span class='code'>45.95115,-102.509769</span></strong>" description="First line 
+									of text" directionstext="(directions to our address)" icon="yellow" style="14" 
+									scalecontrol="no" typecontrol="no" streetcontrol="no" <span class='code'>zoom="8"</span> zoomcontrol="no" 
+									draggable="yes" scrollwheel="no" searchbox="no" clustering="no" logging="no" 
+									poi="yes" width="880px" height="500px" maptype="roadmap" popup="no" center="" 
+									refresh="no" key="your_api_key"]
+								</p>
+								<p><img src="img/image_4.png" alt="map" /></p>
+								<br>
+								
+								<h3>3. A black &amp; white map</h3>
+								<br>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" description="Yeronga QLD 4104, 
+									Australia {br} Phone: 0040 752 235 756" directionstext="(directions to our address)" 
+									icon="black" <span class='code'>style="24"</span> scalecontrol="no" typecontrol="no" streetcontrol="no" 
+									zoom="14" zoomcontrol="no" draggable="yes" scrollwheel="no" searchbox="no" 
+									clustering="no" logging="no" poi="yes" width="880px" height="500px" 
+									maptype="roadmap" popup="yes" center="" refresh="no" key="your_api_key"]
+								</p>
+								<p><img src="img/image_5.png" alt="map" /></p>
+								<br>
+								
+								<h3>4. Format the description inside the popup</h3>
+								<br>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" description="<span class='code'>&lt;img 
+									src='http://hevada.com/wp-content/plugins/responsive-maps-plugin/includes/img/company.png'&gt; 
+									{br} Yeronga QLD 4104, Australia {br} Phone: 0040 752 235 756</span>" 
+									directionstext="(directions to our address)" 
+									icon="http://hevada.com/mapgenerator/icons/car.png" style="22" scalecontrol="no" 
+									typecontrol="no" streetcontrol="no" zoom="14" zoomcontrol="no" draggable="yes" 
+									scrollwheel="no" searchbox="no" clustering="no" logging="no" poi="yes" 
+									width="880px" height="500px" maptype="roadmap" popup="yes" center="" refresh="no" 
+									key="your_api_key"]
+								</p>
+								<p><img src="img/image_6.png" alt="map" /></p>
+								<br>
+								
+								<h3>5. Change the icon color</h3>
+								<br>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" description="Yeronga QLD 4104, 
+									Australia {br} Phone: 0040 752 235 756" directionstext="(directions to our address)" 
+									<span class='code'>icon="blue"</span> style="25" scalecontrol="no" typecontrol="no" 
+									streetcontrol="no" zoom="14" zoomcontrol="no" draggable="yes" scrollwheel="no" searchbox="no" 
+									clustering="no" logging="no" poi="yes" width="100%" height="500px" maptype="roadmap" 
+									popup="yes" center="" refresh="no" key="your_api_key"]
+								</p>
+								<p><img src="img/image_7.png" alt="map" /></p>
+								<br>
+								
+								<h3>6. Change the map style</h3>
+								<br>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" description="Yeronga QLD 4104, 
+									Australia {br} Phone: 0040 752 235 756" directionstext="(directions to our address)" 
+									icon="red" <span class='code'>style="28"</span> scalecontrol="no" typecontrol="no" 
+									streetcontrol="no" zoom="18" zoomcontrol="no" draggable="yes" scrollwheel="no" searchbox="no" 
+									clustering="no" logging="no" poi="yes" width="100%" height="500px" maptype="roadmap" 
+									popup="yes" center="" refresh="no" key="your_api_key"]
+								</p>
+								<p><img src="img/image_8.png" alt="map" /></p>
+								<br>
+								
+								<h3>7. Use a custom marker icon</h3>
+								<br>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" description="Yeronga QLD 4104, 
+									Australia {br} Phone: 0040 752 235 756" directionstext="(directions to our address)" 
+									icon="<span class='code'>http://hevada.com/mapgenerator/icons/car.png</span>" style="30" 
+									scalecontrol="no" typecontrol="no" streetcontrol="no" zoom="18" zoomcontrol="no" draggable="yes" 
+									scrollwheel="no" searchbox="no" clustering="no" logging="no" poi="yes" width="880px" 
+									height="500px" maptype="roadmap" popup="yes" center="" refresh="no" 
+									key="your_api_key"]
+								</p>
+								<p><img src="img/image_9.png" alt="map" /></p>
+								<br>
+								
+								<h3>8. Show/hide the controls</h3>
+								<br>
+								<p>Every other control in the map can be shown / hidden by specifying its corresponding 
+								parameter. So that you can customize your map in every possible way: you have full 
+								control on what to show on the map.</p>
+								<p class="background">
+									[res_map address="Yeronga QLD 4104, Australia" 
+									description="&lt;img src='http://yava.ro/wp-content/plugins/responsive-maps-plugin/includes/img/company.png'&gt; 
+									{br} Yeronga QLD 4104, Australia {br} Phone:  0040 752 235 756" 
+									directionstext="(directions to our address)" icon="blue" iconsize="" 
+									style="27" <span class='code'>scalecontrol="yes" typecontrol="yes" streetcontrol="yes"</span>
+									locateme="yes" zoom="13" zoomcontrol="yes" draggable="yes" scrollwheel="no" 
+									searchbox="yes" clustering="no" logging="no" poi="yes" fullscreen="yes" 
+									popup="yes" tabfix="no" width="100%" height="500px" maptype="roadmap" refresh="yes" 
+									center="" key="your_api_key"]
+								</p>
+								<p><img src="img/image_10.png" alt="map" /></p>
+								<br>
+								
+								<h3>9. How to use a custom link in the marker popup</h3>
+								<br>
+								<p>Just use the custom link in the description area like this:</p>
+								<p class="background">
+									[res_map address="New York" description="<span class='code'>&lt;a href='http://google.com' target='_blank'&gt;
+									the link here&lt;/a&gt; {br} another line of text here</span>" directionstext="" style="2" 
+									popup="yes" key="your_api_key"]
+								</p>
+								<p><img src="img/image_11.png" alt="map" /></p>
+								<br>
+								
+								<h3>10. How to use the shortcode in a theme</h3>
+								<br>
+								<p>Just copy-paste the map shortcode generated in the Responsive Styled Google Maps 
+								Helper from the admin dashboard and use this shortcode in a php do_shortcode statement, 
+								as explained here::</p>
+								<p>
+									<a href="https://css-tricks.com/snippets/wordpress/shortcode-in-a-template/">
+									https://css-tricks.com/snippets/wordpress/shortcode-in-a-template/</a>
+								</p>
+								<br>
+								
+								<h3>11. Markers list</h3>
+								<br>
+								<p>If you wish to have besides the map a list with all the locations and when you click 
+								on a link, the corresponding marker to be open, just use the following script:</p>
+								<div class="background">
+										<pre>&lt;a href="javascript: openMarker(1, 1);"&gt;New York&lt;/a&gt;</pre>
+										<pre>&lt;a href="javascript: openMarker(1, 2);"&gt;Maryland&lt;/a&gt;</pre>
+								</div>
+								<p>
+									The arguments passed to the javascript function openMarker(1, 2) mean: open the 2nd 
+									marker from the 1st map displayed. The result is the following map with links 
+									(when a link is clicked, the corresponding marker opens up):
+								</p>
+								<p><img src="img/image_2.png" alt="map" /></p>
+								<p>A live example of this can be seen here:
+								<a href="http://yava.ro/13-a-responsive-styled-map-with-a-clickable-list-of-locations/" 
+								target="_blank">
+								http://yava.ro/13-a-responsive-styled-map-with-a-clickable-list-of-locations/</a></p>
+								<br>
+								
+								<h3>12. How to set the pin icons for retina support</h3>
+								<br>
+								<p>If you want to have retina support for the pin icons (so that they do not appear 
+								pixelated when zoomed in - on retina screens, for instance on iPhone4 - you will need a 
+								bigger, sharp icon and in the map shortcode you'll set the iconsize to 1/2 of the real 
+								size of that big icon. This way, on retina screens, when zoomed-in, the icon will look 
+								sharp.</p>
+								<p>For instance, let's say you want to use as pin icon an image: pin@2x.png (having 
+								width=30px and height=50px), for retina support, your map shortcode will be like this:
+								</p>
+								<p class="background">
+										[res_map address="New York" icon="http://website.com/pin@2x.png" 
+										iconsize="15, 25" style="2" popup="yes"]
+								</p>
+								<p>
+									where 15,25 means width, height to which to scale (and are equal to half of the width=30px and height=50px).
+								</p>
+								<br>
+								
+								<h3>13. How to set different colors for the pins</h3>
+								<br>
+								<p class="background">
+									[res_map address="Paris | Toulouse | Montpellier" 
+									description="&lt;img src='https://goo.gl/6sCyEM'&gt; {br} PARIS | 
+									&lt;img src='https://goo.gl/nCcbNj'&gt; {br} TOULOUSE| 
+									&lt;img src='https://goo.gl/0uNUeL'&gt; {br} MONTPELLIER" 
+									directionstext="(directions)" icon="<span class='code'>blue | red | green</span>" iconsize="" 
+									style="24" scalecontrol="no" typecontrol="no" streetcontrol="no" 
+									locateme="no" zoom="5" zoomcontrol="no" draggable="yes" scrollwheel="no" 
+									searchbox="no" clustering="no" logging="no" poi="yes" fullscreen="no" 
+									popup="no" tabfix="no" width="100%" height="500px" maptype="roadmap" 
+									refresh="yes" center="" key="your_api_key"]
+								</p>
+								<p><img src="img/image_3.png" alt="map" /></p>
+								<br>
+								
+								<h3>14. Example with 3 markers and custom links in popups</h3>
+								<br>
+								<p class="background">
+									[res_map address="London | Berlin | Paris" 
+									description="<span class='code'>&lt;a href='https://www.google.com'&gt;link1 here&lt;/a&gt; | 
+									&lt;a href='https://www.yahoo.com'&gt;link2 here&lt;/a&gt; | 
+									&lt;a href='https://www.envato.com'&gt;link3 here&lt;/a&gt;</span>" directionstext="" 
+									popup="yes" zoom="5" style="2" icon="green" key="your_api_key"]
+								</p>
+								<p><img src="img/image_15.png" alt="map" /></p>
+								<br>
+
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section FAQ -->
+			<div class="section scrollspy" id="faq-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">FAQ</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+							<div class="text-box">
+								<!-- FAQ 1 -->
+								<blockquote><strong>1. I see a blank area instead of a map. Why?</strong>
+								</blockquote>
+								<p>If you are seeing a blank area instead of the map, please switch temporary to the 
+								default WordPress theme (Twenty Seventeen) and check if you see the map with this theme. 
+								If yes, it means that the theme you were using has some conflicts with my plugin and 
+								please contact me, sending also the link to the live page that contains the map, for 
+								debugging purposes.</p>
+								
+									
+								<!-- FAQ 2 -->
+								<hr>
+								<blockquote><strong>
+									2. I have many markers, why they load so slowly?</strong>
+								</blockquote>
+								<p>
+									When you use physical addresses, Google Maps server takes time to translate them 
+									one by one to a latitude, longitude coordinate. Only after that they are displayed 
+									on the map. To avoid this operation and improve loading time, please use your 
+									locations in a latitude, longitude format, for instance:
+								</p>
+								<p class="background">
+									[res_map address="51.648450, -1.841401 | 51.450201, -1.291792 | 
+									51.182451, -1.374161 | 51.021711, -1.489974 | 50.893711, -1.445973 | 
+									50.881053, -1.269805"...]
+								</p>
+								<p>
+									where 51.648450, -1.841401 is a location on the map, 51.450201, -1.291792 is another 
+									location on the map and so on.
+								</p>
+								
+								<!-- FAQ 3 -->
+								<hr>
+								<blockquote><strong>
+									3. Is it possible to show a video in that small popup of the pin?</strong>
+								</blockquote>
+								<p>
+									Yes, it is possible, just put the video code in the description field in the map 
+									shortcode. Example:
+								</p>
+								<p class="background">
+									[res_map address="Berlin, Germany" description="&lt;iframe width='100%' height='100%' 
+									src='https://www.youtube.com/embed/bEPAbS-SRlg' frameborder='0' allowfullscreen&gt;
+									&lt;/iframe&gt;" directionstext="" style="38" streetcontrol="yes" zoom="13" 
+									draggable="yes" scrollwheel="no" width="100%" height="500px" popup="yes" 
+									center="52.540422, 13.404267" refresh="yes"]
+								</p>
+								
+								<!-- FAQ 4 -->
+								<hr>
+								<blockquote>
+									4. Why I receive a jQuery not found error?
+								</blockquote>
+								<p>
+									This error appears if the theme you are using is not coded correctly. Please 
+									contact the theme author and make sure he has included wp_footer() in the footer 
+									correctly as explained 
+									<a href="https://codex.wordpress.org/Function_Reference/wp_footer" 
+									target="_blank">here</a> and also wp_head() as explained 
+									<a href="https://codex.wordpress.org/Function_Reference/wp_head" 
+									target="_blank">here</a>.
+								</p>
+								
+								<!-- FAQ 5 -->
+								<hr>
+								<blockquote>
+									5. Everything is fine, but why the map does not show up?
+								</blockquote>
+								<p>
+									Please make sure you are using a width and height in the shortcode. Do not leave 
+									empty the width and height parameters in the shortcode. If you are using 
+									width="100%" but the map still does not show up, maybe the theme you are using is 
+									not responsive. Try usinga fixed width or fixed height if the map is not showing, 
+									for instance width="500px" and if the map shows up after this, please contact the 
+									theme author, because in this case the page of the theme is not responsive and you 
+									can't use % widths...
+								</p>
+								
+								<!-- FAQ 6 -->
+								<hr>
+								<blockquote>
+									6. Why the popups show latitude, longitude, not text?
+								</blockquote>
+								<p>
+									Please make sure that in the shortcode, insode the description field you only use 
+									simple apostrophes in the HTML content you put there.
+								</p>
+								<p>This is correct:</p>
+								<p class="background">
+									[res_map...description="&lt;img src='http://someimage.png' alt='someimage'&gt;"...]
+								</p>
+								<p>This is not correct:</p>
+								<p class="background">
+									[res_map...description="&lt;img src="http://someimage.png" alt="someimage"&gt;"...]
+								</p>
+								
+								<!-- FAQ 7 -->
+								<hr>
+								<blockquote>
+									7. How do I center the content in the popup window?
+								</blockquote>
+								<p>
+									Please add in your page, immediately after the [res_map] shortcode, this CSS code 
+									that will center the content in the popup window:
+								</p>
+								<p class="background">
+									    &lt;style&gt;
+									        .gm-style-iw {white-space: pre-wrap !important;text-align: center !important;}
+									    &lt;style&gt;
+								</p>
+								
+								<!-- FAQ 8 -->
+								<hr>
+								<blockquote>
+									8. How do I use the shortcode with Visual Composer?
+								</blockquote>
+								<p>
+									Solution 1: When you create a page or a post, in the backend editor of Visual 
+									Composer, just create a text block and put there the map shortcode.
+								</p>
+								<p>Solution 2: If you wish to create/edit the map in a more visual way, import the 
+								below map shortcode, into Dashboard->Visual Composer->Shortcode Mapper->Map Shortcode 
+								section, like in the video: 
+								<a href="https://www.youtube.com/watch?v=ULCGIhdtAwE&amp;t=33s" target="_blank">
+								https://www.youtube.com/watch?v=ULCGIhdtAwE&amp;t=33s</a>
+								</p>
+								
+								<!-- FAQ 9 -->
+								<hr>
+								<blockquote>
+									9. The plugin is not compatible with W3 Total Cache plugin?
+								</blockquote>
+								<p>
+										If you are using the W3 Total Cache plugin and the maps are not showing up, 
+										this is the reason: W3 Total Cache plugin distorts the way in which javascript 
+										libraries are included, so you will have to add manually the Google Maps 
+										library to the list of excluded libraries. To do so, navigate to 
+										Dashboard->W3 Total Cahe settings->Minify tab and find the textarea named: 
+										"Never minify the following JS files" and add there this link, without 
+										slashes, without http or something else, exaclty like below:	
+								</p>
+								<p class="background">
+									<a href="maps.googleapis.com/maps/api/js" target=_blank>maps.googleapis.com/maps/api/js</a>
+								</p>
+								
+								
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Section Changelog -->
+			<div class="section scrollspy" id="changelog-section">
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<h5 class="grey-text text-darken-2 left-align">Changelog</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel">
+						
+					<p>	<strong>12.05.2019 - version 4.7</strong><br>
+						- Fixed a compatibility issue with other plugins that are using also the "description" HTML field name.<br>
+						- removed the "tab fix" attribute, no longer needed, it works in tabs without it<br>
+						- fixed some bugs for the case when importing older shortcodes<br>
+						- fixed the CSS margins of popup after the latest Google Maps API changes<br>
+						- added to the documentation how to obtain the Google Maps API key<br>
+						- replaced document.addEventListener("DOMContentLoaded") with  jQuery(document).ready for better compatibility <br>
+					</p>
+						
+					<p>	<strong>04.01.2019 - version 4.6</strong><br>
+						- Included Envato Market Plugin for automatic updates.<br>
+						- Fixed HTML warnings in PHP files.<br>
+						- Fixed logo not showing in popup when RESET SETTINGS button was clicked.<br>
+						- Replaced the "locate me" data image with a custom symbol (for https compatibility).<br>
+						- Resized the "locate me" button to the size of the other controls.<br>
+						- Converted all links from http to https.<br>
+						- Added automatic delivery of retina icons on retina devices.<br>
+						- Replaced style 50 with one that has countries boundaries.<br>
+						- Optimized all images in the plugin package, for faster speed.<br>
+						- Updated the language files.<br>
+					</p>
+					<p>	<strong>12.07.2018 - version 4.5</strong><br>
+						- Fixed the responsiveness of markers popups on mobile.</p>
+					<p>	<strong>20.10.2017 - version 4.4</strong><br>
+						- Now all the map settings can be saved in the database from the plugin&#39;s admin Helper window.</p>
+					<p>	<strong>04.06.2017 - version 4.3</strong><br>
+						- CSS fix: now for all the elements inside the map div, the max-width is reset to &quot;none&quot; because Google Maps do not work with other max-width (some themes set max-width: 100%)</p>
+					<p>	<strong>04.06.2017 - version 4.2</strong><br>
+						- Small updates to the documentation</p>
+					<p>	<strong>05.05.2017 - version 4.1</strong><br>
+						- Fixed the CSS compatibility with CalendarizeIt plugin (which was breaking the google maps)<br>
+						- Added the fullscreen button for desktops (for mobiles, Google adds it by default. Note: iOS doesn&#39;t support the fullscreen feature. The fullscreen control is therefore not visible on iOS devices. https://developers.google.com/maps/documentation/javascript/releases)<br>
+						- Updated the marker clustering library to the latest version (https://github.com/googlemaps/js-marker-clusterer)<br>
+						- Removed in CSS the fix for large rows of text in marker popup, now its already done by Google (white-space: pre-wrap !important;)<br>
+						- Modified the responsiveness of the map to be done only at the end of the resize event (to prevent many requests to Google Maps server)<br>
+						- Added if (jQuery(&#39;#mapcolor&#39;).length)&nbsp; to the admin screen, to avoid the conflict with the CodeCanyon Frontend Builder plugin.<br>
+						- Now the map scripts are enqueued right before the end of the body tag, to prevent conflicts with other plugins that were overriding the API<br>
+						- Fixed the showing of incorrect center for slow internet connections.<br>
+						- Added the button &quot;LOAD A SHORTCODE&quot; to be able to edit previously created shortcodes<br>
+						- Added the tabfix parameter.</p>
+					<p>	<strong>14.07.2016 - version 4.0</strong><br>
+						- Added a new shortcode parameter: iconsize (for retina support)<br>
+						- Updated the translation file</p>
+					<p>	<br>
+						<strong>27.06.2016 - version 3.4</strong><br>
+						- Added the possibility to enter a Google Maps API key (required by Google after 22 June 2016)</p>
+					<p>	<br>
+						<strong>21.05.2016 - version 3.3</strong><br>
+						- Moved the clustering icons inside the plugin (they were removed from public CDN)<br>
+						- Fixed the max-width and max-height issue for compatibility with some free themes<br>
+						(some free themes limit the max-width and max-height of all images to 70%-80%, breaking the maps imagery)</p>
+					<p>	<br>
+						<strong>19.02.2016 - version 3.2</strong><br>
+						- Updated to the latest version the included marker clusterer library<br>
+						- Fixed the incompatibility with WP External Links plugin (by fixing how description in popup is generated)<br>
+						- Added locate me feature / button<br>
+						- Fixed the admin form looking on latest Google Chrome<br>
+						- Removed in the getstylestring function the code that was doubled<br>
+						- Removed adsense feature because it has been deprecated by Google<br>
+						(see this for details https://developers.google.com/maps/documentation/javascript/advertising )<br>
+						- Map scripts are now loaded in footer for faster loading<br>
+						- Added two CSS settings to avoid conflicts with themes which set images width</p>
+					<p>	<br>
+						<strong>05.01.2016 - version 3.1</strong><br>
+						- Renamed a CSS id from #shortcode to #resmap_shortcode, to avoid conflict with ShortcodeMenu plugin in admin area<br>
+						- Removed the &quot;sensor&quot; parameter from the Maps API call, it became deprecated</p>
+					<p>	<br>
+						<strong>25.09.2015 - version 3.0</strong><br>
+						- Changed the location of the search box to the left corner, due to recent Google Maps API controls changes<br>
+						- Removed pan control completely, because it was also removed from the Google Maps API<br>
+						- Replaced __ with esc_html__ for better security in the file responsive-styled-google-maps-admin.php<br>
+						- Default language files (.mo and .po) updated</p>
+					<p>	<br>
+						<strong>12.08.2015 - version 2.29</strong><br>
+						- Replaces data- attributes with javascript (buyers request)</p>
+					<p>	<br>
+						<strong>26.07.2015 - version 2.28</strong><br>
+						- Added shortcode support for text widgets</p>
+					<p>	<br>
+						<strong>17.07.2015 - version 2.27</strong><br>
+						- Fixed the translations loading issue<br>
+						- Fixed the too general CSS rules<br>
+						- Moved all javascripts to JS files<br>
+						- Fixed a bug with the search field<br>
+						- Moved functions from responsive-styled-google-maps-functions.php&nbsp; to the main file of the plugin<br>
+						- Added 10 new map styles<br>
+						- Removed redundant code<br>
+						- Updated documentation</p>
+					<p>	<br>
+						<strong>04.06.2015 - version 2.26</strong><br>
+						- Resized icons to 75% for better visibility on mobile devices<br>
+						- Search bar moved at the bottom side to not overlap with map type control<br>
+						- Added feature to show/hide the points of interest<br>
+						- Updated documentation with FAQ</p>
+					<p>	<br>
+						<strong>24.05.2015 - version 2.25</strong><br>
+						- Added search box option<br>
+						- Added clustering option<br>
+						- Added logging (in browser console) option&nbsp;&nbsp; &nbsp;<br>
+						- Updated the included documentation&nbsp; &nbsp;</p>
+					<p>	<br>
+						<strong>30.10.2014 - version 2.24</strong><br>
+						- Fixed map display with certain tabs frameworks<br>
+						- Fixed calling markers list for multiple maps in a page</p>
+					<p>	<br>
+						<strong>01.08.2014 - version 2.23</strong><br>
+						- Added back Adsense option&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					<p>	&nbsp;&nbsp; &nbsp;<br>
+						<strong>22.05.2014 - version 2.22</strong><br>
+						- Fixed map re-centering on window resize</p>
+					<p>	<br>
+						<strong>14.05.2014 - version 2.21</strong><br>
+						- Replaced the default icons with more visible ones<br>
+						- Moved the javascript from the php file to separate js file</p>
+					<p>	<br>
+						<strong>04.05.2014 - version 2.20</strong><br>
+						- Fix for the infowindowanchor because some web hosting providers disable access to the PHP getimagesize function</p>
+					<p>	<br>
+						<strong>10.04.2014 - version 2.19</strong><br>
+						- Added 10 new map styles<br>
+						- Added a color picker to the map styles<br>
+						- Added automatically detection of icon&#39;s width and height, so that infowindow is automatically positioned<br>
+						- Added automatic detection when maps used with tabs and the fix accordingly<br>
+						- Corrected link for SSL connections to Google Maps API<br>
+						- Fixed a bug with empty directions link<br>
+						- Code refactoring in back-end for performance improvements<br>
+						- Added to CSS the &quot;max-width: none&quot; to prevent popup conflicts with some themes<br>
+						- Moved inline CSS to separate file from the admin panel<br>
+						- Fix to include the plugin&#39;s files in WordPress admin area only when on map settings page<br>
+						- Fixed the bug when map was not displayed when used in footer widgets<br>
+						- Added a default translation file in lang folder<br>
+						- Fixed shadow on icons<br>
+						- Removed the double flickering when maps were displayed</p>
+					<p>	<br>
+						<strong>24.12.2013 - version 2.18</strong><br>
+						- Minor style changes to plugin&#39;s panel, due to WordPress 3.8 changes<br>
+						- Changed plugin&#39;s url to codecanyon plugin&#39;s url<br>
+						- Changed in markers CSS the white-space to nowrap (to avoid text issues in the marker popup)<br>
+						- Added to the documentation an example about how to integrate the shortcode directly in theme templates.</p>
+					<p>	<br>
+						<strong>19.11.2013 - version 2.17</strong><br>
+						- Fixed in the back-end the icon anchor for some zoom levels.<br>
+						- Re-sized, for better-looking, the marker icons from 32x47px to 29x43px.</p>
+					<p>	<br>
+						<strong>12.11.2013 - version 2.16</strong><br>
+						- Introduced back the pre-defined map styles (30) (the parameter named style instead of the parameter color).<br>
+						- Iconanchor and infowindowanchor fixes<br>
+						- CSS and look improvements</p>
+					<p>	<br>
+						<strong>31.10.2013 - version 2.15</strong><br>
+						- Renamed file functions.php to avoid conflicts with some themes<br>
+						- Fixed the generated icons color names in the shortcode when multiple markers are used&nbsp;&nbsp;&nbsp;</p>
+					<p>	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>
+						<strong>24.10.2013 - version 2.14</strong><br>
+						- Fixed icon anchor (it shows now the correct street at largest zoom)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					<p>	&nbsp; &nbsp;<br>
+						<strong>25.09.2013 - version 2.13</strong><br>
+						- Added feature: possibility to set a different icon for each marker</p>
+					<p>	<br>
+						<strong>12.09.2013 - version 2.12</strong><br>
+						- Added new shortcode parameter: refresh (if the map should be refreshed when the window is scaled)</p>
+					<p>	<br>
+						<strong>06.09.2013 - version 2.11</strong><br>
+						- Added the &quot;UPDATE MAP&quot; button to plugin&#39;s admin panel<br>
+						- Smaller icons (many buyers have requested it)<br>
+						- Removed (for stability issues) the map&#39;s refresh when the window is scaled<br>
+						- CSS fixes for tablets in portrait mode<br>
+						- Added new setting: draggable (if the map should be draggable by mouse or hand gestures)<br>
+						- Added new setting: scrollwheel (if the map should zoom in/out when mouse scroll is used)<br>
+						- Fixed parsing issues with French addresses and directions text containg apostrophes<br>
+						- Fixed the conflict with some SEO plugins (due to single or double apostrophes conflicts)</p>
+					<p>	<br>
+						<strong>20.08.2013 - version 2.10</strong><br>
+						- Small bug fix on window resize event for Safari on iPhones older than 4S&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>
+					<p>	<br>
+						<strong>18.08.2013 - version 2.9</strong><br>
+						- Added fix after resize function for map on window resize event (re-center map when window resizes)</p>
+					<p>	<br>
+						<strong>16.08.2013 - version 2.8</strong><br>
+						- CSS fixes for markers info windows (required by Google API updates last night regarding the info windows)</p>
+					<p>	<br>
+						<strong>15.08.2013 - version 2.7</strong><br>
+						- Removed the style parameter and added color parameter instead (to be able to use any possible color for the map)<br>
+						- Fixed the Google Maps API server message &quot;Sensor parameter must be either true or false&quot; for some mobile phones<br>
+						- Small CSS customizations<br>
+						- Directions link is now optional (you can display it or not)<br>
+						- New modern colors for pre-defined icons<br>
+						- Ads removed =&gt; faster loading</p>
+					<p>	<br>
+						<strong>15.07.2013 - version 2.6</strong><br>
+						- Added the possibility to use {br} to insert a new line in the description field<br>
+						- Improved the accuracy of the location when latitude/longitude are used<br>
+						- Small CSS customization (reset the line-height to remove the vertical scrollbar in the popup window)<br>
+						- Renamed the gMap function to not conflict with other map plugins or with themes</p>
+					<p>	<br>
+						<strong>26.05.2013 - version 2.5</strong><br>
+						- Improved loading time by importing the adsense library only when needed<br>
+						- Small CSS customization (removed marked shadows, rounded info window corners)<br>
+						- Added possibility to specify a custom marker icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>
+					<p>	<br>
+						<strong>18.03.2013 - version 2.4</strong><br>
+						- Improves pages loading by loading javascript and css only when shortcode is called<br>
+						- Added a new shortcode parameter(optional) named &quot;center&quot; to be able to center a map with many markers</p>
+					<p>	<br>
+						<strong>12.03.2013 - version 2.3</strong><br>
+						- Removes the &quot;Too many markers, switching to one marker per mode&quot; javascript message<br>
+						- Replaces the ampersand with its code in the url to google maps library</p>
+					<p>	<br>
+						<strong>17.02.2013 - version 2.2</strong><br>
+						- Fixes the move of the icon marker when the map is zoomed in/out</p>
+					<p>	<br>
+						<strong>11.02.2013 - version 2.1</strong><br>
+						- Small JS fix for map shadows</p>
+					<p>	<br>
+						<strong>09.02.2013 - version 2.0</strong><br>
+						- Added a plugin panel (with shortcode generator and map preview, both in real-time)<br>
+						- Added multiple markers support<br>
+						- Added possibility to show adsense ads over the corner of the map<br>
+						- Marker&#39;s description now supports both text and html code</p>
+					<p>	<br>
+						<strong>02.02.2013 - version 1.1</strong><br>
+						- Fixed the marker shadow offset<br>
+						- Fixed the css interfering with themes css</p>
+					<p>	<br>
+						<strong>31.01.2013 - version 1.0</strong><br>
+						- The initial version</p>
+					<p>	<br></p>
+					<p>	Credits:<br></p>
+					<ul>	
+						<li>jQuery gMap plugin by Sebastian Poreba: 
+							<a href="http://www.smashinglabs.pl/gmap" target="_blank" title="http://www.smashinglabs.pl/gmap">
+								http://www.smashinglabs.pl/gmap
+							</a>
+						</li>
+						<li>Using the Google Maps API you agree to their 
+							<a href="https://developers.google.com/maps/faq#tos" target="_blank" title="terms">
+								terms of service
+							</a>
+						</li>
+					</ul>	
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="copy">© 2018 hevada.com All rights reserved.</div>
+		</footer>
+	</div>
+
+	<div class="hiddendiv common"></div>
+	<div class="drag-target" data-sidenav="nav-mobile" style="left: 0px; touch-action: pan-y;"></div>
+</body>
+</html>
+
+
+
+

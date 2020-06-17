@@ -1,3 +1,12 @@
+# BEGIN s2Member GZIP exclusions
+<IfModule rewrite_module>
+	RewriteEngine On
+	RewriteBase /iniciativamultiespecies/wordpress/
+	RewriteCond %{QUERY_STRING} (^|\?|&)s2member_file_download\=.+ [OR]
+	RewriteCond %{QUERY_STRING} (^|\?|&)no-gzip\=1
+	RewriteRule .* - [E=no-gzip:1]
+</IfModule>
+# END s2Member GZIP exclusions
 
 # BEGIN WordPress
 # As diretrizes (linhas) entre `BEGIN WordPress` e` END WordPress` são
@@ -5,11 +14,11 @@
 # Quaisquer alterações nas diretivas entre esses marcadores serão sobrescritas.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /iniciativamultiespecies/
+RewriteBase /iniciativamultiespecies/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /iniciativamultiespecies/index.php [L]
+RewriteRule . /iniciativamultiespecies/wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
